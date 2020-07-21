@@ -55,8 +55,8 @@ void calc_probs(std::map<char, mpreal> &count_map, std::map<char, mpreal> &prob_
 int main() {
     std::string input;
 
-    mpfr::mpreal::set_default_prec(10000);
-    mpreal::set_default_rnd(MPFR_RNDA);
+    mpfr::mpreal::set_default_prec(8192);
+    mpreal::set_default_rnd(MPFR_RNDU);
 
     mpreal high = 1.0;
     mpreal low = 0.0;
