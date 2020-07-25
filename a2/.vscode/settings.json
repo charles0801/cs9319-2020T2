@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.source": "sql",
+        "string": "cpp"
+    }
+}
