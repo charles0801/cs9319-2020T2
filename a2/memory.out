@@ -1,0 +1,1094 @@
+desc: --pages-as-heap=yes --massif-out-file=memory.out
+cmd: ./bwtdecode test/dna-5MB.bwt test.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=8192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=25709
+mem_heap_B=258048
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=39129
+mem_heap_B=3686400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=58725
+mem_heap_B=10575872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=73020
+mem_heap_B=10584064
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=96994
+mem_heap_B=10596352
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2281232
+mem_heap_B=10596352
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 10596352 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n4: 10358784 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n2: 200704 0x401007B: _dl_sysdep_read_whole_file (dl-misc.c:57)
+   n1: 200704 0x4016136: _dl_load_cache_lookup (dl-cache.c:201)
+    n1: 200704 0x4008D09: _dl_map_object (dl-load.c:2332)
+     n1: 200704 0x40012F3: map_doit (rtld.c:592)
+      n1: 200704 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+       n1: 200704 0x40195CD: _dl_catch_error (dl-error-skeleton.c:215)
+        n1: 200704 0x400128D: do_preload (rtld.c:763)
+         n1: 200704 0x40050B8: dl_main (rtld.c:1696)
+          n1: 200704 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+           n1: 200704 0x4002116: _dl_start (rtld.c:415)
+            n1: 200704 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+             n1: 200704 0x1: ???
+              n1: 200704 0x1FFF00072D: ???
+               n1: 200704 0x1FFF000739: ???
+                n0: 200704 0x1FFF00074A: ???
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 2 places, all below massif's threshold (1.00%)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=2281232
+mem_heap_B=10592256
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2361509
+mem_heap_B=10530816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=38913657
+mem_heap_B=10665984
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=128462973
+mem_heap_B=10838016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=274437180
+mem_heap_B=10973184
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=465263688
+mem_heap_B=11108352
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=465278094
+mem_heap_B=11104256
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=565439895
+mem_heap_B=11362304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=565467446
+mem_heap_B=11362304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11362304 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 536576 0x4CC7132: mmap (mmap64.c:52)
+  n1: 536576 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 536576 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 536576 0x4C573E1: malloc (malloc.c:3049)
+     n1: 536576 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 536576 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 536576 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 536576 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 536576 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 536576 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 536576 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 536576 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n1: 430080 0x4CC3306: brk (brk.c:31)
+  n1: 430080 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 430080 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 430080 0x4C55144: sysmalloc (malloc.c:2473)
+     n2: 430080 0x4C562C7: _int_malloc (malloc.c:4133)
+      n1: 294912 0x4C573E1: malloc (malloc.c:3049)
+       n1: 294912 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 294912 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 294912 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 294912 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 294912 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n1: 294912 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+             n1: 294912 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+              n0: 294912 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+      n1: 135168 0x4C565F3: tcache_init.part.6 (malloc.c:2979)
+       n1: 135168 0x4C57464: malloc (malloc.c:2975)
+        n1: 135168 0x490B564: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 135168 0x400F378: call_init.part.0 (dl-init.c:72)
+          n1: 135168 0x400F474: _dl_init (dl-init.c:118)
+           n1: 135168 0x40010C8: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+            n1: 135168 0x1: ???
+             n1: 135168 0x1FFF00072D: ???
+              n1: 135168 0x1FFF000739: ???
+               n0: 135168 0x1FFF00074A: ???
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=565467446
+mem_heap_B=11358208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=920996480
+mem_heap_B=11493376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=921024029
+mem_heap_B=11493376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11493376 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 667648 0x4CC7132: mmap (mmap64.c:52)
+  n1: 667648 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 667648 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 667648 0x4C573E1: malloc (malloc.c:3049)
+     n1: 667648 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 667648 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 667648 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 667648 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 667648 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 667648 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 667648 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 667648 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n1: 430080 0x4CC3306: brk (brk.c:31)
+  n1: 430080 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 430080 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 430080 0x4C55144: sysmalloc (malloc.c:2473)
+     n2: 430080 0x4C562C7: _int_malloc (malloc.c:4133)
+      n1: 294912 0x4C573E1: malloc (malloc.c:3049)
+       n1: 294912 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 294912 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 294912 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 294912 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 294912 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n1: 294912 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+             n1: 294912 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+              n0: 294912 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+      n1: 135168 0x4C565F3: tcache_init.part.6 (malloc.c:2979)
+       n1: 135168 0x4C57464: malloc (malloc.c:2975)
+        n1: 135168 0x490B564: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 135168 0x400F378: call_init.part.0 (dl-init.c:72)
+          n1: 135168 0x400F474: _dl_init (dl-init.c:118)
+           n1: 135168 0x40010C8: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+            n1: 135168 0x1: ???
+             n1: 135168 0x1FFF00072D: ???
+              n1: 135168 0x1FFF000739: ???
+               n0: 135168 0x1FFF00074A: ???
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=921024029
+mem_heap_B=11489280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1152470545
+mem_heap_B=11886592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1152524718
+mem_heap_B=11886592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11886592 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 1060864 0x4CC7132: mmap (mmap64.c:52)
+  n1: 1060864 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 1060864 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 1060864 0x4C573E1: malloc (malloc.c:3049)
+     n1: 1060864 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1060864 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 1060864 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 1060864 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 1060864 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 1060864 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 1060864 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 1060864 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n1: 430080 0x4CC3306: brk (brk.c:31)
+  n1: 430080 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 430080 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 430080 0x4C55144: sysmalloc (malloc.c:2473)
+     n2: 430080 0x4C562C7: _int_malloc (malloc.c:4133)
+      n1: 294912 0x4C573E1: malloc (malloc.c:3049)
+       n1: 294912 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 294912 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 294912 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 294912 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 294912 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n1: 294912 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+             n1: 294912 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+              n0: 294912 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+      n1: 135168 0x4C565F3: tcache_init.part.6 (malloc.c:2979)
+       n1: 135168 0x4C57464: malloc (malloc.c:2975)
+        n1: 135168 0x490B564: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 135168 0x400F378: call_init.part.0 (dl-init.c:72)
+          n1: 135168 0x400F474: _dl_init (dl-init.c:118)
+           n1: 135168 0x40010C8: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+            n1: 135168 0x1: ???
+             n1: 135168 0x1FFF00072D: ???
+              n1: 135168 0x1FFF000739: ???
+               n0: 135168 0x1FFF00074A: ???
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=1152524718
+mem_heap_B=11882496
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1189567181
+mem_heap_B=12013568
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1314987112
+mem_heap_B=12275712
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1773328958
+mem_heap_B=12804096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1773383131
+mem_heap_B=12804096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 12804096 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 1323008 0x4CC7132: mmap (mmap64.c:52)
+  n1: 1323008 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 1323008 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 1323008 0x4C573E1: malloc (malloc.c:3049)
+     n1: 1323008 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1323008 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 1323008 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 1323008 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 1323008 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 1323008 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 1323008 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 1323008 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n1: 1085440 0x4CC3306: brk (brk.c:31)
+  n1: 1085440 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 1085440 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 1085440 0x4C55144: sysmalloc (malloc.c:2473)
+     n2: 1085440 0x4C562C7: _int_malloc (malloc.c:4133)
+      n1: 950272 0x4C573E1: malloc (malloc.c:3049)
+       n1: 950272 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 950272 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 950272 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 950272 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 950272 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n1: 950272 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+             n1: 950272 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+              n0: 950272 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+      n1: 135168 0x4C565F3: tcache_init.part.6 (malloc.c:2979)
+       n1: 135168 0x4C57464: malloc (malloc.c:2975)
+        n1: 135168 0x490B564: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 135168 0x400F378: call_init.part.0 (dl-init.c:72)
+          n1: 135168 0x400F474: _dl_init (dl-init.c:118)
+           n1: 135168 0x40010C8: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+            n1: 135168 0x1: ???
+             n1: 135168 0x1FFF00072D: ???
+              n1: 135168 0x1FFF000739: ???
+               n0: 135168 0x1FFF00074A: ???
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=1773383131
+mem_heap_B=12800000
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2386215453
+mem_heap_B=13066240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2463662217
+mem_heap_B=13594624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2463716559
+mem_heap_B=13594624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 13594624 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 2113536 0x4CC7132: mmap (mmap64.c:52)
+  n1: 2113536 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 2113536 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 2113536 0x4C573E1: malloc (malloc.c:3049)
+     n1: 2113536 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 2113536 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 2113536 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 2113536 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 2113536 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 2113536 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 2113536 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 2113536 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n1: 1085440 0x4CC3306: brk (brk.c:31)
+  n1: 1085440 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 1085440 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 1085440 0x4C55144: sysmalloc (malloc.c:2473)
+     n2: 1085440 0x4C562C7: _int_malloc (malloc.c:4133)
+      n1: 950272 0x4C573E1: malloc (malloc.c:3049)
+       n1: 950272 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 950272 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 950272 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 950272 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 950272 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n1: 950272 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+             n1: 950272 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+              n0: 950272 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+      n0: 135168 in 1 place, below massif's threshold (1.00%)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=2463716559
+mem_heap_B=13590528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2531120414
+mem_heap_B=13795328
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2531227837
+mem_heap_B=13795328
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 13795328 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 3166208 0x4CC7132: mmap (mmap64.c:52)
+  n1: 3166208 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 3166208 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 3166208 0x4C573E1: malloc (malloc.c:3049)
+     n1: 3166208 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 3166208 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 3166208 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 3166208 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 3166208 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 3166208 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 3166208 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 3166208 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n1: 233472 0x4CC3306: brk (brk.c:31)
+  n1: 233472 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 233472 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 233472 0x4C55144: sysmalloc (malloc.c:2473)
+     n1: 233472 0x4C562C7: _int_malloc (malloc.c:4133)
+      n0: 233472 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=2531227837
+mem_heap_B=13791232
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=3250595897
+mem_heap_B=14319616
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=3250703318
+mem_heap_B=14319616
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 14319616 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 3690496 0x4CC7132: mmap (mmap64.c:52)
+  n1: 3690496 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 3690496 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 3690496 0x4C573E1: malloc (malloc.c:3049)
+     n1: 3690496 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 3690496 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 3690496 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 3690496 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 3690496 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 3690496 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 3690496 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 3690496 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n1: 233472 0x4CC3306: brk (brk.c:31)
+  n1: 233472 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 233472 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 233472 0x4C55144: sysmalloc (malloc.c:2473)
+     n1: 233472 0x4C562C7: _int_malloc (malloc.c:4133)
+      n0: 233472 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=3250703318
+mem_heap_B=14315520
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=4667244974
+mem_heap_B=14843904
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=4667352396
+mem_heap_B=14843904
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 14843904 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 4214784 0x4CC7132: mmap (mmap64.c:52)
+  n1: 4214784 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 4214784 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 4214784 0x4C573E1: malloc (malloc.c:3049)
+     n1: 4214784 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 4214784 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 4214784 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 4214784 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 4214784 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 4214784 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 4214784 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 4214784 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n1: 233472 0x4CC3306: brk (brk.c:31)
+  n1: 233472 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 233472 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 233472 0x4C55144: sysmalloc (malloc.c:2473)
+     n1: 233472 0x4C562C7: _int_malloc (malloc.c:4133)
+      n0: 233472 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=4667352396
+mem_heap_B=14839808
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=4688814096
+mem_heap_B=15368192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=4688921517
+mem_heap_B=15368192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 15368192 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 4739072 0x4CC7132: mmap (mmap64.c:52)
+  n1: 4739072 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 4739072 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 4739072 0x4C573E1: malloc (malloc.c:3049)
+     n1: 4739072 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 4739072 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 4739072 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 4739072 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 4739072 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 4739072 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 4739072 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 4739072 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n1: 233472 0x4CC3306: brk (brk.c:31)
+  n1: 233472 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 233472 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 233472 0x4C55144: sysmalloc (malloc.c:2473)
+     n1: 233472 0x4C562C7: _int_malloc (malloc.c:4133)
+      n0: 233472 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=4688921517
+mem_heap_B=15364096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=5701026183
+mem_heap_B=16941056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=5701240100
+mem_heap_B=16941056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 16941056 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 6311936 0x4CC7132: mmap (mmap64.c:52)
+  n1: 6311936 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 6311936 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 6311936 0x4C573E1: malloc (malloc.c:3049)
+     n1: 6311936 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 6311936 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 6311936 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 6311936 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 6311936 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 6311936 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 6311936 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 6311936 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n1: 233472 0x4CC3306: brk (brk.c:31)
+  n1: 233472 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 233472 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 233472 0x4C55144: sysmalloc (malloc.c:2473)
+     n1: 233472 0x4C562C7: _int_malloc (malloc.c:4133)
+      n0: 233472 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=5701240100
+mem_heap_B=16936960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=6142292490
+mem_heap_B=17989632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=6142506407
+mem_heap_B=17989632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n5: 17989632 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n3: 10158080 0x401A6F2: mmap (mmap64.c:52)
+  n1: 5484544 0x40061EF: _dl_map_object_from_fd (dl-map-segments.h:56)
+   n2: 5484544 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 5439488 0x400D290: openaux (dl-deps.c:64)
+     n1: 5439488 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 5439488 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 5439488 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 5439488 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 5439488 0x4002116: _dl_start (rtld.c:415)
+          n1: 5439488 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 5439488 0x1: ???
+            n1: 5439488 0x1FFF00072D: ???
+             n1: 5439488 0x1FFF000739: ???
+              n0: 5439488 0x1FFF00074A: ???
+    n0: 45056 in 1 place, below massif's threshold (1.00%)
+  n1: 4612096 0x4006342: _dl_map_object_from_fd (dl-map-segments.h:94)
+   n2: 4612096 0x4008A8B: _dl_map_object (dl-load.c:2466)
+    n1: 4579328 0x400D290: openaux (dl-deps.c:64)
+     n1: 4579328 0x4019569: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 4579328 0x400D604: _dl_map_object_deps (dl-deps.c:248)
+       n1: 4579328 0x4003AF9: dl_main (rtld.c:1733)
+        n1: 4579328 0x401864E: _dl_sysdep_start (dl-sysdep.c:253)
+         n1: 4579328 0x4002116: _dl_start (rtld.c:415)
+          n1: 4579328 0x4001096: ??? (in /lib/x86_64-linux-gnu/ld-2.28.so)
+           n1: 4579328 0x1: ???
+            n1: 4579328 0x1FFF00072D: ???
+             n1: 4579328 0x1FFF000739: ???
+              n0: 4579328 0x1FFF00074A: ???
+    n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n1: 7360512 0x4CC7132: mmap (mmap64.c:52)
+  n1: 7360512 0x4C554B2: sysmalloc (malloc.c:2313)
+   n1: 7360512 0x4C562C7: _int_malloc (malloc.c:4133)
+    n1: 7360512 0x4C573E1: malloc (malloc.c:3049)
+     n1: 7360512 0x490F043: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 7360512 0x10D8CA: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+       n1: 7360512 0x10D4CA: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+        n1: 7360512 0x10CFE6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+         n1: 7360512 0x10C2E6: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+          n1: 7360512 0x10B32A: void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+           n1: 7360512 0x10AC7E: std::vector<int, std::allocator<int> >::push_back(int&&) (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+            n0: 7360512 0x10A5E4: main (in /tmp_amd/cage/export/cage/4/z3493295/cs9319-2020T2/a2/bwtdecode)
+ n0: 237568 0xFFFFFFFFFFFFFFFF: ???
+ n1: 233472 0x4CC3306: brk (brk.c:31)
+  n1: 233472 0x4CC33E7: sbrk (sbrk.c:56)
+   n1: 233472 0x4C58E47: __default_morecore (morecore.c:47)
+    n1: 233472 0x4C55144: sysmalloc (malloc.c:2473)
+     n1: 233472 0x4C562C7: _int_malloc (malloc.c:4133)
+      n0: 233472 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=6142506407
+mem_heap_B=17985536
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
