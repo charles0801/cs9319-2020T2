@@ -5,6 +5,6 @@ int main() {
     char w;
     ifstream input("test/dna-tiny.bwt");
     input.seekg(3) >> w;
-    cout << w << endl;
+    cout << w << input.tellg() << endl;
     return 0; 
 }

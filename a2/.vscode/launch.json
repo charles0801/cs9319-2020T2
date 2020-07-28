@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["test/dna-tiny.bwt", "test.out"],
+            "args": ["test.in", "test.out"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
